@@ -1,68 +1,235 @@
-/* Basic Reset and Font Styling */
+/* --- Global Styles & Variables --- */
+:root {
+    --primary-color: #0d214d; /* A professional deep blue */
+    --secondary-color: #e4b268; /* A sophisticated gold accent */
+    --dark-gray: #333333;
+    --light-gray: #f4f4f4;
+    --white-color: #ffffff;
+    --font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f8f9fa; /* A very light grey background */
-    color: #333; /* Dark grey text instead of pure black */
+    font-family: var(--font-family);
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    text-align: center;
+    color: var(--dark-gray);
+    line-height: 1.7;
 }
 
-/* Main content container */
 .container {
-    max-width: 600px;
-    width: 90%;
-    padding: 40px;
-    background-color: #ffffff; /* White card for the content */
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-/* Logo styling */
-.logo {
-    max-width: 300px; /* Adjust size as needed */
-    height: auto;
+/* --- Typography --- */
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2em;
     margin-bottom: 40px;
 }
 
-/* Contact information section */
-.contact-info h2 {
-    font-weight: 600;
-    color: #000;
-    margin-bottom: 25px;
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 15px;
-}
-
-.contact-info p {
+.section-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
     font-size: 1.1em;
-    line-height: 1.6;
+}
+
+/* --- Header & Navigation --- */
+.main-header {
+    background-color: var(--white-color);
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px; /* Adjust as needed */
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
     margin: 0;
+    padding: 0;
 }
 
-.address {
-    margin-bottom: 20px;
-}
-
-/* Make the phone number look clean */
-.phone a {
-    color: #333;
+.nav-links li a {
     text-decoration: none;
+    color: var(--dark-gray);
     font-weight: 600;
-    font-size: 1.2em;
+    padding: 10px 15px;
     transition: color 0.3s ease;
 }
 
-.phone a:hover {
-    color: #0056b3; /* A professional blue for hover effect */
+.nav-links li a:hover {
+    color: var(--primary-color);
 }
 
-/* Footer styling */
-footer {
-    margin-top: 40px;
+.nav-contact-btn {
+    background-color: var(--primary-color);
+    color: var(--white-color) !important;
+    border-radius: 5px;
+    padding: 8px 20px !important;
+    margin-left: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-contact-btn:hover {
+    background-color: #081736;
+    color: var(--white-color) !important;
+}
+
+/* --- Hero Section --- */
+#hero {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3em;
+    margin: 0 0 10px 0;
+}
+
+.hero-subtitle {
+    font-size: 1.2em;
+    font-weight: 400;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: #2b2b2b;
+}
+
+.btn-primary:hover {
+    background-color: #d8a350;
+    transform: translateY(-2px);
+}
+
+/* --- General Section Styling --- */
+section {
+    padding: 80px 0;
+}
+
+.section-bg-light {
+    background-color: var(--light-gray);
+}
+
+.section-bg-dark {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.section-bg-dark .section-title {
+    color: var(--white-color);
+}
+
+/* --- Services Section --- */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.service-card {
+    background: var(--white-color);
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.07);
+}
+
+.service-card h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+/* --- Contact Section --- */
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-block h4 {
+    font-size: 1.4em;
+    color: var(--secondary-color);
+}
+
+.contact-block p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.phone-number a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+/* --- Footer --- */
+.main-footer {
+    background-color: #081736;
+    color: #a0a0a0;
+    text-align: center;
+    padding: 20px 0;
     font-size: 0.9em;
-    color: #888;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Simplification for mobile, can be replaced with a burger menu later */
+    }
+    .hero-title {
+        font-size: 2.2em;
+    }
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-details {
+        flex-direction: column;
+    }
+    .contact-block {
+        margin-bottom: 30px;
+    }
 }

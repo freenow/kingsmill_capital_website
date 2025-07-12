@@ -3,41 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kingsmill Capital</title>
+    <title>Kingsmill Capital - Strategic Investment & Advisory</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <img src="logo.png" alt="Kingsmill Capital Logo" class="logo">
-        </header>
-        
-        <main>
-            <div class="contact-info">
-                <h2>Contact Information</h2>
-                <div class="address">
+    <!-- Header and Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="#" class="logo-link">
+                    <img src="logo.png" alt="Kingsmill Capital Logo" class="logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact" class="nav-contact-btn">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Building Value Through Strategic Partnership</h1>
+                <p class="hero-subtitle">Kingsmill Capital provides expert advisory and growth capital for visionary businesses.</p>
+                <a href="#contact" class="btn btn-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section-bg-light">
+        <div class="container">
+            <h2 class="section-title">Our Philosophy</h2>
+            <p class="section-intro">
+                Founded in 2005, Kingsmill Capital is built on a foundation of integrity, experience, and a commitment to long-term success. We don't just invest; we partner with management teams to provide the strategic, operational, and financial support needed to achieve sustainable growth and create lasting value.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">What We Do</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Growth Equity</h3>
+                    <p>We provide capital to established companies looking to finance transformative events, such as expansion, acquisitions, or market entry.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Advisory Services</h3>
+                    <p>Our team brings decades of experience to help guide businesses through complex financial and strategic challenges.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Long-Term Partnerships</h3>
+                    <p>We are dedicated partners, offering patient capital and continuous support to ensure our portfolio companies thrive.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section-bg-dark">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-details">
+                <div class="contact-block">
+                    <h4>Mailing Address</h4>
                     <p>
                         1055 Dunsmuir Street<br>
                         Suite 3501, PO Box 49215<br>
                         Vancouver, BC V7X 1K8
                     </p>
                 </div>
-                <div class="phone">
-                    <p>
+                <div class="contact-block">
+                    <h4>Phone</h4>
+                    <p class="phone-number">
                         <a href="tel:1-844-784-1546">1-844-784-1546</a>
                     </p>
                 </div>
             </div>
-        </main>
+        </div>
+    </section>
 
-        <footer>
-            <p>© 2024 Kingsmill Capital. All rights reserved.</p>
-        </footer>
-    </div>
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2024 Kingsmill Capital. All Rights Reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
