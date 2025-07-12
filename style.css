@@ -233,3 +233,10 @@ section {
         margin-bottom: 30px;
     }
 }
+
+/* --- Hero Logo Styling --- */
+.hero-logo {
+    max-width: 280px; /* Adjust this value to make the logo bigger or smaller */
+    height: auto;
+    margin-bottom: 30px;
+}
