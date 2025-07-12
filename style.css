@@ -1,0 +1,68 @@
+/* Basic Reset and Font Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fa; /* A very light grey background */
+    color: #333; /* Dark grey text instead of pure black */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Main content container */
+.container {
+    max-width: 600px;
+    width: 90%;
+    padding: 40px;
+    background-color: #ffffff; /* White card for the content */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo styling */
+.logo {
+    max-width: 300px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 40px;
+}
+
+/* Contact information section */
+.contact-info h2 {
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.address {
+    margin-bottom: 20px;
+}
+
+/* Make the phone number look clean */
+.phone a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.phone a:hover {
+    color: #0056b3; /* A professional blue for hover effect */
+}
+
+/* Footer styling */
+footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #888;
+}
